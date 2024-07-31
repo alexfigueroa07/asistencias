@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <h1>Iniciar Sesión</h1>
+    <div class="login-container">
+        <form id="login-form">
+            <label for="uid">UID:</label>
+            <input type="text" id="uid" name="uid" required>
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <button type="submit">Iniciar Sesión</button>
+        </form>
+        <p id="login-message"></p>
+    </div>
+
+    <script>
+        document.getElementById('login-form').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const uid = document.getElementById('uid').value;
+            const nombre = document.getElementById('nombre').value;
+
+
+            window.location.href = `/dashboard.html?uid=${uid}&nombre=${nombre}`;
+        });
+    </script>
+</body>
+
+</html>

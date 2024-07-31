@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="alumnos.css">
+</head>
+
+<body>
+
+    <body>
+        <h1>Lista de Alumnos</h1>
+        <div id="alumnos-list"></div>
+
+        <script>
+            fetch('/api/alumnos')
+                .then(response => response.json())
+                .then(data => {
+                    const alumnosList = document.getElementById('alumnos-list');
+
+                    data.forEach(alumno => {
+                        const alumnoDiv = document.createElement('div');
+                        alumnoDiv.classList.add('alumno');
+                        const btn = createElement('Button')
+                        const nombreCompleto = `${alumno.nombre} ${alumno.apellido}`;
+                        const uid = `UID: ${alumno.uid}`;
+                        const status = `Estado: ${alumno.status}`;
+
+                        alumnoDiv.innerHTML = `<h2>${nombreCompleto}</h2><p>${uid}</p><p>${status}</p>`;
+
+                        alumnosList.appendChild(alumnoDiv);
+                    });
+                })
+                .catch(error => console.error('Error al obtener datos de alumnos:', error));
+        </script>
+    </body>
+
+</html>

@@ -1,0 +1,198 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #FFFFFF;
+    color: #1F41A6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-header {
+    background-color: #1F41A6;
+    color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    height: 60px;
+    margin-right: 20px;
+}
+
+.header-title {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.professor-name {
+    font-size: 1.2em;
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.dashboard-section {
+    background-color: #F5F5F5;
+    border-radius: 8px;
+    padding: 20px;
+    width: 100%;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    font-size: 1.6em;
+    margin-bottom: 20px;
+    color: #1F41A6;
+    text-align: center;
+}
+
+#subjects-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.subject {
+    background-color: #f2f2f2;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.subject:hover {
+    background-color: #93BF34;
+}
+
+.dropdown-options {
+    margin-top: 10px;
+}
+
+.dropdown-options button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #1F41A6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dropdown-options button:hover {
+    background-color: #162e70;
+}
+
+.subject h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.subject p {
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+
+.main-footer {
+    background-color: #1F41A6;
+    color: #FFFFFF;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+#search-input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+#suggestions-container {
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.suggestion {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.suggestion:hover {
+    background-color: #f1f1f1;
+}
+
+#alumno-details {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#show-details-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #1F41A6;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#show-details-btn:hover {
+    background-color: #162e70;
+}
+
+#alumno-details {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#alumno-details p {
+    margin: 10px 0;
+}
