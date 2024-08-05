@@ -7,6 +7,7 @@ const dashboardRouter = require('./routes/dashboard');
 const studentsRouter = require('./routes/students');
 const gruposRouter = require('./routes/grupos');
 const asistenciaRouter = require('./routes/asistencia');
+const laptopsRouter = require('./routes/laptops');
 
 
 const app = express();
@@ -23,6 +24,7 @@ app.use('/api', dashboardRouter);
 app.use('/api', studentsRouter);
 app.use('/api', gruposRouter);
 app.use('/api', asistenciaRouter);
+app.use('/api', laptopsRouter);
 
 
 
